@@ -14,7 +14,7 @@ app.post('/webhook', async (req, res) => {
   console.log('📦 Received webhook:', JSON.stringify(logEntry, null, 2));
 
   try {
-    await axios.post('https://hooks.zapier.com/hooks/catch/23602547/u3h2f6n/', req.body);
+    await axios.post('https://hooks.zapier.com/hooks/catch/23602547/u2bc3mr/', req.body);
     console.log('✅ Forwarded to Zapier');
   } catch (err) {
     console.error('❌ Error forwarding to Zapier:', err.message);
